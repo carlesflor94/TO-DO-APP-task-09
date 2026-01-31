@@ -18,7 +18,7 @@ function App() {
       <NewTaskForm />
 
       <section className="main">
-        <TaskList />
+        <TaskList tasks={tasks}/>
 
         <Footer />
       </section>

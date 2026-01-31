@@ -1,9 +1,9 @@
 import Task from './Task'
 
-const TaskList = () => {
+const TaskList = ({ tasks }) => {
     return (
         <ul className="todo-list">
-          <Task />
+          {tasks.map(task => <Task key={index} task={task}/>)}
         </ul>
     );
 }
