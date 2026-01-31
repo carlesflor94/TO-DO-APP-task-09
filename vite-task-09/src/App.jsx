@@ -9,7 +9,7 @@ function App() {
   const [tasks, setTasks] = useState([
     {
       description: 'New task',
-      created: new Date(),
+      time: new Date(),
     }
   ])
 
