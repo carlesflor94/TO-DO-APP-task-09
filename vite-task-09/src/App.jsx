@@ -5,6 +5,14 @@ import NewTaskForm from './components/NewTaskForm';
 import Footer from './components/Footer';
 
 function App() {
+
+  const [tasks, setTasks] = useState([
+    {
+      description: 'New task',
+      created: new Date(),
+    }
+  ])
+
   return (
     <section className="todoapp">
       <NewTaskForm />
