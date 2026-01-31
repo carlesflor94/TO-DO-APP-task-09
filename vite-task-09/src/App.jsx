@@ -1,35 +1,18 @@
 import { useState } from 'react'
+import Task from './components/Task';
+import TaskList from './components/TaskList';
+import NewTaskForm from './components/NewTaskForm';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <section className="todoapp">
-      <header className="header">
-        <h1>todos</h1>
-        <input
-          className="new-todo"
-          placeholder="What needs to be done?"
-          autoFocus
-        />
-      </header>
+      <NewTaskForm />
 
       <section className="main">
-        <ul className="todo-list">
-          <li className="completed">
-            <div className="view">
-              <input className="toggle" type="checkbox" />
-              <label>
-                <span className="description">Completed task</span>
-                <span className="created">created 17 seconds ago</span>
-              </label>
-              <button className="icon icon-edit"></button>
-              <button className="icon icon-destroy"></button>
-            </div>
-          </li>
-        </ul>
+        <TaskList />
 
-        <footer className="footer">
-          <span className="todo-count">1 item left</span>
-        </footer>
+        <Footer />
       </section>
     </section>
   )
